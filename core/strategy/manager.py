@@ -125,3 +125,10 @@ class StrategyManager:
     def register_strategy(self, name: str, strategy: BaseStrategy) -> None:
         """Programmatically register a strategy instance (e.g. for testing)."""
         self._strategies[name] = strategy
+
+    def get_strategy_for_condition(self, condition_name: str) -> Optional[BaseStrategy]:
+        """Return the first strategy whose condition_name matches, or None."""
+        for strategy in self._strategies.values():
+            if strategy.config.condition_name == condition_name:
+                return strategy
+        return None
