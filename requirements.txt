@@ -1,0 +1,8 @@
+PyQt5==5.15.9
+PyQtWebEngine==5.15.6
+python-telegram-bot==20.7
+pyyaml==6.0.1
+python-dotenv==1.0.0
+qasync==0.27.1
+pandas==2.1.4
+numpy==1.26.3

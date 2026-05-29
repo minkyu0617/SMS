@@ -1,0 +1,16 @@
+kiwoom:
+  account_number: ""  # overridable via KIWOOM_ACCOUNT env var
+  is_simul: true      # true = paper trading, false = real trading
+
+telegram:
+  token: ""           # overridable via TELEGRAM_TOKEN env var
+  allowed_users: []   # list of allowed telegram user IDs
+
+trading:
+  max_stocks: 5                # maximum number of stocks to hold simultaneously
+  total_investment: 10000000   # total investment budget in KRW
+  condition_name: "내조건검색"  # kiwoom condition search name
+
+logging:
+  level: "INFO"
+  file: "logs/trading.log"

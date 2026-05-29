@@ -1,0 +1,19 @@
+name: "모멘텀 전략"
+enabled: false
+condition_name: "모멘텀조건"
+
+buy_splits:
+  - step: 1
+    ratio: 0.4
+    drop_pct: 0.0
+  - step: 2
+    ratio: 0.3
+    drop_pct: -2.0
+  - step: 3
+    ratio: 0.3
+    drop_pct: -4.0
+
+sell:
+  stop_loss_pct: -8.0
+  trailing_stop_pct: 3.0
+  trailing_activate_pct: 5.0
